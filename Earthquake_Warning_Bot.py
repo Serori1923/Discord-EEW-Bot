@@ -88,7 +88,7 @@ async def monitor_file(file_path):
 
             last_modified_time = modified_time
 
-            f = open('file_path')
+            f = open(file_path)
             text = []
             for line in f:
                 text = line.split(" ")
@@ -104,7 +104,7 @@ async def monitor_file(file_path):
                     nowtime=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
                     AlarnNo += 1
                     last_modified_time = modified_time
-                    f = open('file_path')
+                    f = open(file_path)
                     text = []
                     for line in f:
                         text = line.split(" ")
